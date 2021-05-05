@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    180deg,
+    #f9ec69 0%,
+    #f08a5d 41.55%,
+    #b83b5e 68.75%,
+    #6a2c70 100%
+  );
+  background-repeat: no-repeat;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 182px;
+  padding-right: 202px;
+  width: 1536px;
+  margin: 0 auto;
+}
+
+/* ======== header ========================== */
+.header {
+  padding-top: 25px;
+}
+/* ======== end header ====================== */
