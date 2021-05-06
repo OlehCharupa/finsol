@@ -3,9 +3,20 @@
 
   .wrapper {
     color: $white-text;
-    // max-width: 645px;
     margin-left: 15px;
     position: relative;
+
+    &::after {
+      content: "";
+      background-image: url(../../images/vector1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -100px;
+      width: 142px;
+      height: 100px;
+      right: 84px;
+    }
 
     .title {
       font-weight: 400;
@@ -17,14 +28,14 @@
       font-weight: 400;
       font-size: 1.8em;
       line-height: 1.48;
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
 
     .text {
       font-weight: 300;
       font-size: 1.2em;
       line-height: 1.47;
-      margin-bottom: 35px;
+      margin-bottom: 50px;
       opacity: 0.9;
     }
 
@@ -60,79 +71,37 @@
       z-index: -11;
     }
   }
-
-  .wrapper__button {
-    display: flex;
-    flex-direction: column;
-    border-radius: 27px;
-    font-weight: 400;
-    font-size: 0.9em;
-    line-height: 1.47;
-    text-align: center;
-
-    .btn__left {
-      color: $black-text;
-      background-color: #fff;
-      padding: 11px 0;
-      border-radius: 15px;
-      border: 2px solid #ffffff;
-      width: 100%;
-      filter: drop-shadow(9px 7px 15px rgba(0, 0, 0, 0.25));
-      margin-bottom: 10px;
-    }
-
-    .btn__right {
-      color: $white-text;
-      background-color: transparent;
-      padding: 11px 0;
-      border-radius: 15px;
-      border: 2px solid #ffffff;
-      filter: drop-shadow(9px 7px 15px rgba(0, 0, 0, 0.25));
-    }
-  }
 }
 @media screen and (min-width: 768px) {
   .about1 {
     .wrapper {
+      &::after {
+        bottom: -100px;
+        width: 142px;
+        height: 100px;
+        right: 351px;
+      }
+
       .text {
         width: 450px;
       }
+
       .youtobe {
         top: 220px;
         right: 354px;
         width: 231px;
       }
+
       .google {
         top: 0px;
         right: 0px;
         width: 120px;
       }
+
       .group-icon {
         top: -41px;
         right: 25px;
         width: 420px;
-      }
-      .wrapper__button {
-        display: flex;
-        flex-direction: row;
-        width: max-content;
-        border-radius: 27px;
-
-        .btn__left {
-          color: $black-text;
-          background-color: #fff;
-          padding: 23px 85px;
-          border-radius: 20px 0 0 20px;
-          margin-bottom: 0;
-        }
-
-        .btn__right {
-          color: $white-text;
-          background-color: transparent;
-          padding: 23px 85px;
-          border-radius: 0 20px 20px 0;
-          min-width: fit-content;
-        }
       }
     }
   }
@@ -143,6 +112,13 @@
 
     .wrapper {
       max-width: 645px;
+
+      &::after {
+        bottom: -215px;
+        width: 300px;
+        height: 215px;
+        right: 62px;
+      }
 
       .title {
         font-size: 7em;
@@ -181,10 +157,6 @@
         right: -259px;
         width: 660px;
       }
-    }
-
-    .wrapper__button {
-      font-size: 1.8em;
     }
   }
 }

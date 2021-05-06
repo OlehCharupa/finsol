@@ -1,0 +1,122 @@
+.feedback {
+  background-color: #fff;
+  padding: 100px 0 50px 0;
+  color: $black-text;
+
+  .title {
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .form {
+    .wrapper {
+      margin-bottom: 27px;
+
+      .inputBox:not(:last-child) {
+        margin-bottom: 27px;
+      }
+    }
+
+    .label {
+      display: block;
+      margin-left: 10px;
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 0.9em;
+      line-height: 1.5;
+      opacity: 0.5;
+    }
+    .input {
+      display: block;
+      padding: 10px;
+      font-weight: 400;
+      font-size: 0.9em;
+      line-height: 1.5;
+      width: 100%;
+      background: #f6f6f6;
+      border-radius: 15px;
+      border: none;
+    }
+    .textetriaBox {
+      margin-bottom: 35px;
+    }
+    .submitBtn {
+      padding: 12px 0;
+      color: $white-text;
+      background-color: #333333;
+      border-radius: 15px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback {
+    .form {
+      .wrapperForm {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin-bottom: 60px;
+        .wrapper {
+          width: 40%;
+          margin-right: 30px;
+          margin-bottom: 0;
+          .inputBox:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+        .textetriaBox {
+          margin-bottom: 0;
+          width: 40%;
+        }
+      }
+      .submitBtn {
+        display: block;
+        padding: 12px 60px;
+        width: max-content;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback {
+    padding: 100px 0 50px 0;
+
+    .title {
+      font-weight: 400;
+      font-size: 3.2em;
+      line-height: 1.5;
+      margin-bottom: 120px;
+      text-align: center;
+    }
+
+    // .form {
+    //   }
+
+    .label {
+      font-weight: 500;
+      font-size: 1.2em;
+    }
+    .input {
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+    .submitBtn {
+      padding: 23px 112px;
+      background-color: #333333;
+      border-radius: 15px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 1.8em;
+      line-height: 1.5;
+    }
+  }
+}

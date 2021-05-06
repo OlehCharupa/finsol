@@ -1,0 +1,106 @@
+.about2 {
+  padding: 40px 0 62px 0;
+  background-image: url("../../images/bcmobile.png");
+
+  .wrapper {
+    color: $white-text;
+    text-align: right;
+
+    .title {
+      font-weight: 400;
+      font-size: 1.8em;
+      line-height: 1.48;
+      margin-bottom: 15px;
+    }
+    .text {
+      font-weight: 300;
+      font-size: 1.2em;
+      line-height: 1.47;
+      margin-bottom: 50px;
+      opacity: 0.9;
+    }
+
+    .message1,
+    .message2,
+    .message3 {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .about2 {
+    padding: 60px 0 90px 0;
+    background-image: url("../../images/bcdesktop.png");
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: relative;
+
+      .title {
+        width: 60%;
+      }
+
+      .text {
+        width: 60%;
+      }
+
+      .message1 {
+        display: block;
+        position: absolute;
+        top: -50px;
+        left: 100px;
+        width: 190px;
+      }
+
+      .message2 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 247px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about2 {
+    padding: 100px 0 80px 0;
+    background-image: url("../../images/bcdesktop.png");
+
+    .wrapper {
+      .title {
+        width: 85%;
+        font-size: 3.2em;
+        margin-bottom: 35px;
+      }
+
+      .text {
+        width: 83%;
+        font-size: 1.8em;
+        margin-bottom: 35px;
+      }
+
+      .message1 {
+        top: -140px;
+        left: 0px;
+        width: 230px;
+      }
+
+      .message2 {
+        bottom: -45px;
+        left: -215px;
+        width: 310px;
+      }
+
+      .message3 {
+        display: block;
+        position: absolute;
+        bottom: 170px;
+        left: -285px;
+        width: 300px;
+      }
+    }
+  }
+}
