@@ -13,7 +13,7 @@
     <header class="header">
         <div class="logo__wrapper container">
             <a href="/" class="logo__link">
-                <img class="logopng" src="./images/logopng.png" alt="logo__icon" width="192px" height="102px">
+                <img class="logopng" src="./images/logo.svg" alt="logo__icon" width="192px" height="102px">
             </a>
         </div>
     </header>
@@ -30,7 +30,7 @@
                     избежать двойного налогооблажения</p>
                     <div class="wrapper__button">
                         <a href="#feedback" class="btn__left">Подать заявку</a>
-                        <a href="#nav" class="btn__right">Связатся с нами</a>
+                        <a href="#feedback" class="btn__right">Связатся с нами</a>
                     </div>
                     <img class="instabig" src="./images/instabig.png" alt="insta">
                     <img class="youtobe" src="./images/youtobebig.png" alt="youtobe">
@@ -47,7 +47,7 @@
                         бизнеса.</p>
                     <div class="wrapper__button">
                         <a href="#feedback" class="btn__left">Подать заявку</a>
-                        <a href="#nav" class="btn__right">Связатся с нами</a>
+                        <a href="#feedback" class="btn__right">Связатся с нами</a>
                     </div>
                     <img class="message1" src="./images/message1.png" alt="message1">
                     <img class="message2" src="./images/message2.png" alt="message2">
@@ -69,7 +69,7 @@
                     </ul>
                     <div class="wrapper__button">
                         <a href="#feedback" class="btn__left">Подать заявку</a>
-                        <a href="#nav" class="btn__right">Связатся с нами</a>
+                        <a href="#feedback" class="btn__right">Связатся с нами</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
         <section class="feedback" id="feedback">
             <div class="container">
                 <h2 class="title">Связатся с нами</h2>
-                <form class="form js-speaker-form">
+                <form class="form" id="js-form">
                     <div class="wrapperForm">
                         <div class="wrapper">
                             <div class="inputBox">
@@ -108,8 +108,8 @@
                                 <input class="input" type="name" id="name" name="name" required placeholder="Имя">
                             </div>
                             <div class="inputBox">
-                                <label class="label" for="number">Телефон</label>
-                                <input class="input" type="text" id="number" pattern="^[ 0-9]+$" name="number" required placeholder="380504138881">
+                                <label class="label" for="phone">Телефон</label>
+                                <input class="input" type="text" id="phone" pattern="^[ 0-9]+$" name="phone" required placeholder="380504138881">
                             </div>
                             <div class="inputBox">
                                 <label class="label" for="email">Электронный адресс</label>
@@ -117,8 +117,8 @@
                             </div>
                         </div>
                         <div class="textetriaBox">
-                            <label class="label" for="message">Сообщение</label>
-                            <textarea class="input" name="message" id="message" cols="30" rows="10" maxlength="1000" required placeholder="Ваше сообщение"></textarea>
+                            <label class="label" for="text">Сообщение</label>
+                            <textarea class="input" name="text" id="text" cols="30" rows="10" maxlength="1000" required placeholder="Ваше сообщение"></textarea>
                         </div>
                     </div>
                     <input class="submitBtn" type="submit" value="Отправить">
@@ -142,25 +142,29 @@
                     <a class="link" href="mailto:mg@finassistant.net">mg@finassistant.net</a>
                     <div class="wrapper_icon">
                         <p class="text">@FinSolutionsCenter</p>
-                        <a class="icon_link" href="/" aria-label="ссылка на skype">
-                        <svg class="icon1" width="25" height="25">
-                            <use href="./images/symbol.svg#icon-skype"/>
-                        </svg>
-                        </a>
-                        <a class="icon_link" href="/" aria-label="ссылка на facebook">
-                            <svg class="icon2" width="25" height="25">
-                                <use href="./images/symbol.svg#icon-facebook" />
-                            </svg>
-                        </a><a class="icon_link" href="/" aria-label="ссылка на instagram">
-                            <svg class="icon3" width="25" height="25">
-                                <use href="./images/symbol.svg#icon-instagram" />
-                            </svg>
-                        </a>
+                        <ul class="list">
+                            <li class="list_item">
+                                <a class="icon_link" href="/" aria-label="ссылка на skype">
+                                    <img class="icon1" width="25" height="25" src="./images/skype.svg"/>
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a class="icon_link" href="/" aria-label="ссылка на facebook">
+                                    <img class="icon2" width="25" height="25" src="./images/facebook.svg"/>
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a class="icon_link" href="/" aria-label="ссылка на instagram">
+                                    <img class="icon3" width="25" height="25" src="./images/instagram.svg" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </div>
     </footer>
-    <script src="./js/form.js" type="module"></script>
+    <!-- <script src="./js/form.js" type="module"></script> -->
+    <script src="./js/form1.js" type="module"></script>
 </body>
 </html>

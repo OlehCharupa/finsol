@@ -32,9 +32,15 @@
       .text {
         display: none;
       }
-      .icon_link {
-        &:not(:last-child) {
-          margin-right: 25px;
+      .list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .list_item {
+          &:not(:last-child) {
+            margin-right: 25px;
+          }
         }
       }
     }
@@ -84,9 +90,11 @@
             font-size: 1.4em;
             line-height: 1.5;
           }
-          .icon_link {
-            &:not(:last-child) {
-              margin-right: 20px;
+          .list {
+            .list_item {
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
             }
           }
         }

@@ -1,5 +1,5 @@
 .about3 {
-  padding: 80px 0 400px 0;
+  padding: 95px 0 400px 0;
   position: relative;
   &::after {
     content: url("../../images/girlmob.png");
@@ -15,39 +15,46 @@
     left: 0;
     right: 0;
     height: 300px;
+    z-index: -11;
   }
   .bc3 {
     display: none;
+    z-index: -11;
   }
   .bcLogo1 {
     position: absolute;
     bottom: 268px;
     left: 60px;
     width: 79px;
+    z-index: -11;
   }
   .bcLogo2 {
     position: absolute;
     bottom: 158px;
     left: 177px;
     width: 131px;
+    z-index: -11;
   }
   .bcLogo3 {
     position: absolute;
     bottom: 319px;
     left: 0px;
     width: 33px;
+    z-index: -11;
   }
   .bcLogo4 {
     position: absolute;
     bottom: 225px;
     left: 133px;
     width: 69px;
+    z-index: -11;
   }
   .bcLogo5,
   .bcLogo6,
   .bcLogo7,
   .bcLogo8 {
     display: none;
+    z-index: -11;
   }
   .wrapper {
     color: $white-text;
@@ -63,7 +70,6 @@
       font-weight: 300;
       font-size: 1.2em;
       line-height: 1.5;
-      opacity: 0.5;
       margin-bottom: 30px;
     }
 
@@ -86,7 +92,7 @@
 
 @media screen and (min-width: 768px) {
   .about3 {
-    padding: 80px 0 300px 0;
+    padding: 95px 0 300px 0;
     &::after {
       content: url("../../images/girlmob.png");
       position: absolute;
@@ -152,7 +158,7 @@
 }
 @media screen and (min-width: 1200px) {
   .about3 {
-    padding: 80px 0 700px 0;
+    padding: 120px 0 700px 0;
     &::after {
       content: url("../../images/girldesk.png");
       position: absolute;
@@ -229,7 +235,6 @@
         font-weight: 300;
         font-size: 1.8em;
         line-height: 1.5;
-        opacity: 1;
         margin-bottom: 25px;
       }
 

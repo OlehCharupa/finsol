@@ -530,7 +530,6 @@ button {
   font-size: 1.2em;
   line-height: 1.47;
   margin-bottom: 50px;
-  opacity: 0.9;
 }
 
 .about1 .wrapper .google {
@@ -639,13 +638,25 @@ button {
 }
 
 .about2 {
-  padding: 40px 0 62px 0;
+  padding: 40px 0 150px 0;
   background-image: url("../../images/bcmobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .about2 .wrapper {
   color: #ffffff;
   text-align: right;
+  position: relative;
+}
+
+.about2 .wrapper::before {
+  content: url("../../images/arrow2.png");
+  position: absolute;
+  bottom: -150px;
+  left: 43px;
+  width: 100px;
+  height: 150px;
 }
 
 .about2 .wrapper .title {
@@ -660,7 +671,6 @@ button {
   font-size: 1.2em;
   line-height: 1.47;
   margin-bottom: 50px;
-  opacity: 0.9;
 }
 
 .about2 .wrapper .message1,
@@ -671,14 +681,21 @@ button {
 
 @media screen and (min-width: 768px) {
   .about2 {
-    padding: 60px 0 90px 0;
+    padding: 60px 0 150px 0;
     background-image: url("../../images/bcdesktop.png");
+    background-size: cover;
   }
   .about2 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: relative;
+  }
+  .about2 .wrapper::before {
+    bottom: -150px;
+    left: 314px;
+    width: 100px;
+    height: 150px;
   }
   .about2 .wrapper .title {
     width: 60%;
@@ -704,8 +721,14 @@ button {
 
 @media screen and (min-width: 1200px) {
   .about2 {
-    padding: 100px 0 80px 0;
+    padding: 100px 0 115px 0;
     background-image: url("../../images/bcdesktop.png");
+  }
+  .about2 .wrapper::before {
+    bottom: -150px;
+    left: 314px;
+    width: 100px;
+    height: 150px;
   }
   .about2 .wrapper .title {
     width: 85%;
@@ -737,7 +760,7 @@ button {
 }
 
 .about3 {
-  padding: 80px 0 400px 0;
+  padding: 95px 0 400px 0;
   position: relative;
 }
 
@@ -756,10 +779,12 @@ button {
   left: 0;
   right: 0;
   height: 300px;
+  z-index: -11;
 }
 
 .about3 .bc3 {
   display: none;
+  z-index: -11;
 }
 
 .about3 .bcLogo1 {
@@ -767,6 +792,7 @@ button {
   bottom: 268px;
   left: 60px;
   width: 79px;
+  z-index: -11;
 }
 
 .about3 .bcLogo2 {
@@ -774,6 +800,7 @@ button {
   bottom: 158px;
   left: 177px;
   width: 131px;
+  z-index: -11;
 }
 
 .about3 .bcLogo3 {
@@ -781,6 +808,7 @@ button {
   bottom: 319px;
   left: 0px;
   width: 33px;
+  z-index: -11;
 }
 
 .about3 .bcLogo4 {
@@ -788,6 +816,7 @@ button {
   bottom: 225px;
   left: 133px;
   width: 69px;
+  z-index: -11;
 }
 
 .about3 .bcLogo5,
@@ -795,6 +824,7 @@ button {
 .about3 .bcLogo7,
 .about3 .bcLogo8 {
   display: none;
+  z-index: -11;
 }
 
 .about3 .wrapper {
@@ -812,7 +842,6 @@ button {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.5;
-  opacity: 0.5;
   margin-bottom: 30px;
 }
 
@@ -833,7 +862,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .about3 {
-    padding: 80px 0 300px 0;
+    padding: 95px 0 300px 0;
   }
   .about3::after {
     content: url("../../images/girlmob.png");
@@ -898,7 +927,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .about3 {
-    padding: 80px 0 700px 0;
+    padding: 120px 0 700px 0;
   }
   .about3::after {
     content: url("../../images/girldesk.png");
@@ -973,7 +1002,6 @@ button {
     font-weight: 300;
     font-size: 1.8em;
     line-height: 1.5;
-    opacity: 1;
     margin-bottom: 25px;
   }
   .about3 .wrapper .list {
@@ -1014,7 +1042,6 @@ button {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.5;
-  opacity: 0.7;
 }
 
 .about4 .wrapper .list .list_item:not(:last-child) {
@@ -1057,7 +1084,6 @@ button {
     font-weight: 300;
     font-size: 1.8em;
     line-height: 1.5;
-    opacity: 0.7;
   }
   .about4 .wrapper .list .list_item:not(:last-child) {
     margin-bottom: 0px;
@@ -1066,7 +1092,7 @@ button {
 
 .feedback {
   background-color: #fff;
-  padding: 100px 0 50px 0;
+  padding: 50px 0 50px 0;
   color: #333333;
 }
 
@@ -1093,7 +1119,7 @@ button {
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.5;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .feedback .form .input {
@@ -1128,7 +1154,7 @@ button {
     margin-bottom: 60px;
   }
   .feedback .form .wrapperForm .wrapper {
-    width: 40%;
+    width: 50%;
     margin-right: 30px;
     margin-bottom: 0;
   }
@@ -1161,19 +1187,21 @@ button {
     margin-bottom: 80px;
     text-align: center;
   }
-  .feedback .label {
+  .feedback .form .wrapperForm .wrapper .inputBox:not(:last-child) {
+    margin-bottom: 47px;
+  }
+  .feedback .form .label {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
-  .feedback .input {
+  .feedback .form .input {
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
-  .feedback .submitBtn {
+  .feedback .form .submitBtn {
     padding: 23px 112px;
     background-color: #333333;
     border-radius: 15px;
-    width: 100%;
     font-weight: 400;
     font-size: 1.8em;
     line-height: 1.5;
@@ -1220,7 +1248,14 @@ button {
   display: none;
 }
 
-.footer .navFooter .wrapper_icon .icon_link:not(:last-child) {
+.footer .navFooter .wrapper_icon .list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .navFooter .wrapper_icon .list .list_item:not(:last-child) {
   margin-right: 25px;
 }
 
@@ -1267,7 +1302,7 @@ button {
     font-size: 1.4em;
     line-height: 1.5;
   }
-  .footer .wrapper .navFooter .wrapper_icon .icon_link:not(:last-child) {
+  .footer .wrapper .navFooter .wrapper_icon .list .list_item:not(:last-child) {
     margin-right: 20px;
   }
 }
