@@ -67,8 +67,9 @@
       position: absolute;
       top: -126px;
       right: 10px;
-      width: 247px;
+      width: 219px;
       z-index: -11;
+      transform: rotate(-51deg);
     }
   }
 }
@@ -153,7 +154,7 @@
       }
 
       .group-icon {
-        top: -92px;
+        top: -145px;
         right: -259px;
         width: 660px;
       }

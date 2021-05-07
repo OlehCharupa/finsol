@@ -561,8 +561,9 @@ button {
   position: absolute;
   top: -126px;
   right: 10px;
-  width: 247px;
+  width: 219px;
   z-index: -11;
+  transform: rotate(-51deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -632,7 +633,7 @@ button {
     width: 300px;
   }
   .about1 .wrapper .group-icon {
-    top: -92px;
+    top: -145px;
     right: -259px;
     width: 660px;
   }
@@ -714,7 +715,7 @@ button {
   .about2 .wrapper .message2 {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 115px;
     left: 0;
     width: 247px;
   }
@@ -747,15 +748,15 @@ button {
     width: 230px;
   }
   .about2 .wrapper .message2 {
-    bottom: -45px;
-    left: -215px;
+    bottom: 87px;
+    left: -160px;
     width: 310px;
   }
   .about2 .wrapper .message3 {
     display: block;
     position: absolute;
-    bottom: 170px;
-    left: -285px;
+    bottom: 320px;
+    left: -221px;
     width: 300px;
   }
 }
