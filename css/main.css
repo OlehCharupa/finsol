@@ -366,10 +366,10 @@ html {
 body {
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(180deg, rgba(249, 236, 105, 0.8) 0%, rgba(240, 138, 93, 0.8) 41.55%, rgba(184, 59, 94, 0.8) 68.75%, rgba(106, 44, 112, 0.8) 100%);
+  background-image: linear-gradient(180deg, #f1e128 0%, #f08a5d 41.55%, #b83b5e 68.75%, #6a2c70 100%);
   background-repeat: no-repeat;
 }
 
@@ -529,6 +529,7 @@ button {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.47;
+  letter-spacing: 0.01em;
   margin-bottom: 50px;
 }
 
@@ -605,7 +606,7 @@ button {
     right: 62px;
   }
   .about1 .wrapper .title {
-    font-size: 7em;
+    font-size: 9em;
   }
   .about1 .wrapper .subtitle {
     font-size: 3.2em;
@@ -1074,8 +1075,9 @@ button {
   }
   .about4 .wrapper .title {
     font-weight: 400;
-    font-size: 6em;
+    font-size: 5em;
     line-height: 1.48;
+    margin-right: 50px;
   }
   .about4 .wrapper .list {
     list-style: square;
@@ -1294,7 +1296,7 @@ button {
     align-items: center;
   }
   .footer .wrapper .navFooter .wrapper_icon .text {
-    display: block;
+    display: none;
     margin-right: 20px;
     color: #56ccf2;
     text-align: right;
