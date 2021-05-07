@@ -1,6 +1,54 @@
 .about3 {
-  padding: 100px 0 50px 0;
-
+  padding: 80px 0 400px 0;
+  position: relative;
+  &::after {
+    content: url("../../images/girlmob.png");
+    position: absolute;
+    bottom: 175px;
+    left: 0;
+    width: 134px;
+    height: 210px;
+  }
+  .bc2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+  }
+  .bc3 {
+    display: none;
+  }
+  .bcLogo1 {
+    position: absolute;
+    bottom: 268px;
+    left: 60px;
+    width: 79px;
+  }
+  .bcLogo2 {
+    position: absolute;
+    bottom: 158px;
+    left: 177px;
+    width: 131px;
+  }
+  .bcLogo3 {
+    position: absolute;
+    bottom: 319px;
+    left: 0px;
+    width: 33px;
+  }
+  .bcLogo4 {
+    position: absolute;
+    bottom: 225px;
+    left: 133px;
+    width: 69px;
+  }
+  .bcLogo5,
+  .bcLogo6,
+  .bcLogo7,
+  .bcLogo8 {
+    display: none;
+  }
   .wrapper {
     color: $white-text;
 
@@ -38,6 +86,61 @@
 
 @media screen and (min-width: 768px) {
   .about3 {
+    padding: 80px 0 300px 0;
+    &::after {
+      content: url("../../images/girlmob.png");
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+      width: 134px;
+      height: 210px;
+    }
+    .bc2 {
+      display: none;
+    }
+    .bc3 {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 450px;
+    }
+    .bcLogo1 {
+      bottom: 216px;
+      left: 100px;
+      width: 120px;
+    }
+    .bcLogo2 {
+      bottom: 243px;
+      left: 265px;
+      width: 143px;
+    }
+    .bcLogo3 {
+      bottom: 166px;
+      left: 0px;
+      width: 57px;
+    }
+    .bcLogo4 {
+      bottom: 330px;
+      left: 442px;
+      width: 98px;
+    }
+    .bcLogo5 {
+      position: absolute;
+      display: block;
+      bottom: 257px;
+      left: 440px;
+      width: 70px;
+    }
+    .bcLogo6 {
+      position: absolute;
+      display: block;
+      bottom: 368px;
+      left: 572px;
+      width: 144px;
+    }
+
     .wrapper {
       margin-left: 15px;
 
@@ -49,8 +152,71 @@
 }
 @media screen and (min-width: 1200px) {
   .about3 {
-    padding: 100px 0 50px 0;
+    padding: 80px 0 700px 0;
+    &::after {
+      content: url("../../images/girldesk.png");
+      position: absolute;
+      bottom: 470px;
+      left: 50px;
+      width: 134px;
+      height: 210px;
+    }
 
+    .bc2 {
+      display: none;
+    }
+    .bc3 {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 750px;
+    }
+    .bcLogo1 {
+      bottom: 406px;
+      left: 100px;
+      width: 181px;
+    }
+    .bcLogo2 {
+      bottom: 376px;
+      left: 390px;
+      width: 163px;
+    }
+    .bcLogo3 {
+      bottom: 253px;
+      left: 0px;
+      width: 75px;
+    }
+    .bcLogo4 {
+      bottom: 427px;
+      left: 608px;
+      width: 200px;
+    }
+    .bcLogo5 {
+      bottom: 570px;
+      left: 896px;
+      width: 213px;
+    }
+    .bcLogo6 {
+      bottom: 565px;
+      left: 455px;
+      width: 144px;
+    }
+    .bcLogo7 {
+      display: block;
+      position: absolute;
+      bottom: 657px;
+      left: 1202px;
+      width: 213px;
+    }
+    .bcLogo8 {
+      display: block;
+      position: absolute;
+      bottom: 799px;
+      left: 1001px;
+      width: 233px;
+    }
     .wrapper {
       .title {
         font-weight: 400;

@@ -359,6 +359,10 @@ img {
   height: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -733,7 +737,64 @@ button {
 }
 
 .about3 {
-  padding: 100px 0 50px 0;
+  padding: 80px 0 400px 0;
+  position: relative;
+}
+
+.about3::after {
+  content: url("../../images/girlmob.png");
+  position: absolute;
+  bottom: 175px;
+  left: 0;
+  width: 134px;
+  height: 210px;
+}
+
+.about3 .bc2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+}
+
+.about3 .bc3 {
+  display: none;
+}
+
+.about3 .bcLogo1 {
+  position: absolute;
+  bottom: 268px;
+  left: 60px;
+  width: 79px;
+}
+
+.about3 .bcLogo2 {
+  position: absolute;
+  bottom: 158px;
+  left: 177px;
+  width: 131px;
+}
+
+.about3 .bcLogo3 {
+  position: absolute;
+  bottom: 319px;
+  left: 0px;
+  width: 33px;
+}
+
+.about3 .bcLogo4 {
+  position: absolute;
+  bottom: 225px;
+  left: 133px;
+  width: 69px;
+}
+
+.about3 .bcLogo5,
+.about3 .bcLogo6,
+.about3 .bcLogo7,
+.about3 .bcLogo8 {
+  display: none;
 }
 
 .about3 .wrapper {
@@ -771,6 +832,62 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .about3 {
+    padding: 80px 0 300px 0;
+  }
+  .about3::after {
+    content: url("../../images/girlmob.png");
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 134px;
+    height: 210px;
+  }
+  .about3 .bc2 {
+    display: none;
+  }
+  .about3 .bc3 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+  }
+  .about3 .bcLogo1 {
+    bottom: 216px;
+    left: 100px;
+    width: 120px;
+  }
+  .about3 .bcLogo2 {
+    bottom: 243px;
+    left: 265px;
+    width: 143px;
+  }
+  .about3 .bcLogo3 {
+    bottom: 166px;
+    left: 0px;
+    width: 57px;
+  }
+  .about3 .bcLogo4 {
+    bottom: 330px;
+    left: 442px;
+    width: 98px;
+  }
+  .about3 .bcLogo5 {
+    position: absolute;
+    display: block;
+    bottom: 257px;
+    left: 440px;
+    width: 70px;
+  }
+  .about3 .bcLogo6 {
+    position: absolute;
+    display: block;
+    bottom: 368px;
+    left: 572px;
+    width: 144px;
+  }
   .about3 .wrapper {
     margin-left: 15px;
   }
@@ -781,7 +898,70 @@ button {
 
 @media screen and (min-width: 1200px) {
   .about3 {
-    padding: 100px 0 50px 0;
+    padding: 80px 0 700px 0;
+  }
+  .about3::after {
+    content: url("../../images/girldesk.png");
+    position: absolute;
+    bottom: 470px;
+    left: 50px;
+    width: 134px;
+    height: 210px;
+  }
+  .about3 .bc2 {
+    display: none;
+  }
+  .about3 .bc3 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 750px;
+  }
+  .about3 .bcLogo1 {
+    bottom: 406px;
+    left: 100px;
+    width: 181px;
+  }
+  .about3 .bcLogo2 {
+    bottom: 376px;
+    left: 390px;
+    width: 163px;
+  }
+  .about3 .bcLogo3 {
+    bottom: 253px;
+    left: 0px;
+    width: 75px;
+  }
+  .about3 .bcLogo4 {
+    bottom: 427px;
+    left: 608px;
+    width: 200px;
+  }
+  .about3 .bcLogo5 {
+    bottom: 570px;
+    left: 896px;
+    width: 213px;
+  }
+  .about3 .bcLogo6 {
+    bottom: 565px;
+    left: 455px;
+    width: 144px;
+  }
+  .about3 .bcLogo7 {
+    display: block;
+    position: absolute;
+    bottom: 657px;
+    left: 1202px;
+    width: 213px;
+  }
+  .about3 .bcLogo8 {
+    display: block;
+    position: absolute;
+    bottom: 799px;
+    left: 1001px;
+    width: 233px;
   }
   .about3 .wrapper .title {
     font-weight: 400;
@@ -810,7 +990,7 @@ button {
 }
 
 .about4 {
-  padding: 100px 0 50px 0;
+  padding: 0 0 50px 0;
   background-color: #fff;
 }
 
@@ -843,7 +1023,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .about4 {
-    padding: 100px 0 50px 0;
+    padding: 0spx 0 50px 0;
   }
   .about4 .wrapper {
     display: flex;
@@ -860,7 +1040,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .about4 {
-    padding: 100px 0 50px 0;
+    padding: 0 0 50px 0;
   }
   .about4 .wrapper {
     justify-content: space-between;
