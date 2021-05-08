@@ -1149,6 +1149,24 @@ button {
   width: 100%;
 }
 
+.feedback .form .resultOk {
+  color: green;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.feedback .form .resultError {
+  color: red;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-top: 15px;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .feedback .form .wrapperForm {
     display: flex;
@@ -1176,6 +1194,12 @@ button {
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.5;
+  }
+  .feedback .form .resultOk {
+    font-size: 1.5em;
+  }
+  .feedback .form .resultError {
+    font-size: 1.5em;
   }
 }
 
@@ -1208,6 +1232,12 @@ button {
     font-weight: 400;
     font-size: 1.8em;
     line-height: 1.5;
+  }
+  .feedback .form .resultOk {
+    font-size: 3em;
+  }
+  .feedback .form .resultError {
+    font-size: 3em;
   }
 }
 
@@ -1293,7 +1323,7 @@ button {
   }
   .footer .wrapper .navFooter .wrapper_icon {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   .footer .wrapper .navFooter .wrapper_icon .text {
