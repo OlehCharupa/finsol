@@ -42,7 +42,7 @@
     .google {
       position: absolute;
       top: 150px;
-      right: -20px;
+      right: 0px;
       width: 120px;
       z-index: -11;
     }
@@ -66,7 +66,7 @@
     .group-icon {
       position: absolute;
       top: -126px;
-      right: 10px;
+      right: 32px;
       width: 219px;
       z-index: -11;
       transform: rotate(-51deg);
@@ -101,7 +101,7 @@
 
       .group-icon {
         top: -41px;
-        right: 25px;
+        right: 63px;
         width: 420px;
       }
     }
